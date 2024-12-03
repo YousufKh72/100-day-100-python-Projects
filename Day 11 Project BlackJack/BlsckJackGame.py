@@ -17,8 +17,11 @@
 ## Cards are not removed from the deck as they are drawn.
 ## The computer is the dealer.
 import random
-from replit import clear
+import os
 from art import logo
+def clear():
+    os.system('cls' if os.name == 'nt' else 'clear')
+# HINT: Use clear() to clear the console output.
 
 cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 def deal_card():
